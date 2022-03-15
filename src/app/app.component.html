@@ -15,20 +15,19 @@
       <p>icon</p>
     </div>
     <div class="profile">
-      <img src="" alt="">
+      <img src="/assets/images/image-avatar.png" alt="">
     </div>
   </div>
 </div>
 <div class="container-main">
   <div class="image-container">
     <div class="main image">
-      <img src="" alt="">
+      <img src="/assets/images/image-product-1.jpg" alt="">
     </div>
-    <div class="sub-images">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
+    <div class="sub-images" *ngFor="let img of imagePaths">
+      <div class="image">
+        <img src={{img}} alt="">
+      </div>
     </div>
   </div>
   <div class="content-container">
