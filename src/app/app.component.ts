@@ -23,7 +23,7 @@ export class AppComponent {
   ]
   constructor(){}
   next(){
-    
+
   }
   prev(){}
 }
