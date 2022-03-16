@@ -1,46 +1,80 @@
-<div class="header">
+<div class="header section">
   <div class="links">
-    <div class="title"></div>
-    <div class="links-cobtainer">
+    <div class="title">
+      <div class="menu-bar">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="logo">
+        <p class="lead">sneakers</p>
+      </div>
+    </div>
+    <div class="links-container">
       <ul class="links-lists">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </div>
   </div>
   <div class="cart">
     <div class="cart-icon">
-      <p>icon</p>
+      <img src="/assets/images/icon-cart.svg" alt="">
     </div>
     <div class="profile">
       <img src="/assets/images/image-avatar.png" alt="">
     </div>
   </div>
-</div>
-<div class="container-main">
+</div><hr>
+<div class="container-main grid-2">
   <div class="image-container">
-    <div class="main image">
-      <img src="/assets/images/image-product-1.jpg" alt="">
+    <div class="main-image">
+      <div class="main-pic">
+        <img src="/assets/images/image-product-1.jpg" alt="">
+      </div>
+      <div class="prev">
+        <img src="/assets/images/icon-previous.svg" alt="">
+      </div>
+      <div class="next">
+        <img src="/assets/images/icon-next.svg" alt="">
+      </div>
     </div>
-    <div class="sub-images" *ngFor="let img of imagePaths">
-      <div class="image">
+    <div class="sub-images" >
+      <div class="image-grid" *ngFor="let img of imagePaths">
         <img src={{img}} alt="">
       </div>
     </div>
   </div>
-  <div class="content-container">
+  <div class="content-container section">
     <p class="subP1">Sneaker Company</p>
-    <p class="mainP">Fall Limited Edition Sneaker</p>
+    <h1 class="mainP">Fall Limited Edition Sneaker</h1>
     <p class="sub2">
       These low profile sneakers are your perfect casual wear companion. Featuring a durable rubber sole, they'll withstand 
       everything the weather can offer.
     </p>
     <div class="cart-info">
-      <div class="total"></div>
-      <div class="count"></div>
-      <div class="add"></div>
+      <div class="total"><h1>$125.00</h1></div>
+      <div class="cart-sub">
+        <div class="count">
+          <div class="minus">
+            <img src="/assets/images/icon-minus.svg" alt="">
+          </div>
+          <div class="number">
+            <p>0</p>
+          </div>
+          <div class="plus">
+            <img src="/assets/images/icon-plus.svg" alt="">
+          </div>
+        </div> <div class="add">
+          <img src="/assets/images/icon-cart.svg" alt="">
+          <p>Add to cart</p>
+        </div>
+
+      </div>
+     
     </div>
   </div>
 </div>

@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@media screen and (min-width:768px) {
+    body{
+        padding:1rem 5rem;
+    }
+    .grid-2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sub-images{
+        display:flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width:768px) {
+    .header{
+        padding: 2rem 1rem;
+    }
+    .links-container{
+        display: none;
+    }
+    .container-main{
+        width: 100%;
+    }
+    
+}
